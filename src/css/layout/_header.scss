@@ -1,0 +1,27 @@
+@use '../utils/variables' as *;
+@use '../utils/fonts';
+
+.header {
+    // position: sticky;
+    // top: 0;
+    padding: $space-20 $space-10;
+    margin-bottom: $space-20;
+    background-color: $backgroundNav;
+    border-bottom: 5px solid $fadedjade;
+    display: flex;
+    justify-content: space-between;
+}
+
+.junku__logoImg {
+    width: 100%;
+}
+
+.header__logo {
+    max-width: 280px;
+}
+
+
+
+
+
+

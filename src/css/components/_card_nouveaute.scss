@@ -1,0 +1,75 @@
+@use '../utils/variables' as *;
+@use '../utils/fonts';
+
+.newbook__title {
+    color: $white;  
+}
+
+// .newbook__div {
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     gap: $space-20;
+// }
+.newbook__div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    gap: $space-15;
+    justify-items: center;
+}
+
+.newbook__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: $white;
+    width: 25rem;
+    height: 45rem;
+}
+
+
+.newbook__cardImg {
+    max-height: 25rem;
+    object-fit: contain;
+}
+
+.newbook__cardTitle {
+    text-align: center;
+}
+
+.newbook__cardInfos {
+    display: flex;
+    flex-direction: column;
+    gap: $space-15;
+}
+
+.newbook__cardEven {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+/*-------------- MEDIA QUERIES --------------*/
+
+@media (max-width:$sm) {
+    .newbook__div {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-row-gap: $space-20;
+    
+    }
+}
+
+@media (min-width:$sm) and (max-width:$lg) {
+    .newbook__div {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-row-gap: $space-20;
+    }
+}

@@ -1,0 +1,35 @@
+@use '../utils/variables' as *;
+@use '../utils/fonts';
+
+.section {
+    margin-bottom: $space-20;
+    padding: $space-20 $space-10;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.section__w {
+    width: 118rem;
+}
+
+.section__newbook {
+    background-color: $darkblue;
+    padding: $space-40 0;
+}
+
+// .section__actualite
+
+
+
+/*-------------- MEDIA QUERIES --------------*/
+
+
+
+@media (max-width:$xl) {
+
+    .section__w {
+        width: 100%;
+    }
+
+}

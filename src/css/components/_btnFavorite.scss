@@ -1,0 +1,18 @@
+@use '../utils/variables' as *;
+@use '../utils/fonts';
+
+.btnFavorite {
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: rgba(0,0,0,0);
+    background-image: url(../../../assets/icons/favoutline_icon.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    &.favactive {
+        background-image: url(../../../assets/icons/favfilled_icon.svg);
+    }
+}
+

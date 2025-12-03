@@ -1,0 +1,142 @@
+@use '../utils/variables' as *;
+@use '../utils/fonts';
+
+.footer {
+    background-color: $darkblue; 
+    padding: 0 $space-25;
+    color: $white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.footer__Title {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer__card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: $space-10;
+}
+
+/* ----------- container----------- */
+
+.footer__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: $space-25 0;
+}
+
+/* ----------- LOGO ----------- */
+
+.footer__imgLogo {
+    max-width: 18rem;
+}
+
+
+/* ----------- INFOS ----------- */
+
+.footer__infos {
+    max-width: 36rem;
+}
+
+.infosJunku {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: $space-10;
+    grid-row-gap: $space-10;
+    margin-top: $space-10;
+}
+
+.infosJunku__icon {
+    width: 3rem;
+}
+
+
+/* ----------- PRATIQUE ----------- */
+
+.footer__pratique {
+    max-width: 25rem;
+}
+
+.pratique__icon {
+    width: 4rem;
+}
+
+/* ----------- SOCIAL ----------- */
+
+.footer__social {
+    max-width: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.social__logo {
+    width: 5rem;
+    margin: $space-10 $space-10;
+}
+
+/* ----------- MENTIONS ----------- */
+
+.footer__mentionsList {
+    display: flex;
+    font-size: $fs-14;
+}
+
+.footer__mentionsItem {
+    padding-left: $space-20;
+
+}
+
+
+
+/*-------------- MEDIA QUERIES --------------*/
+@media (max-width: $sm) {
+    .footer__container {
+        flex-direction: column;
+        gap: $space-15;
+    }
+    .infosJunku {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer__Title {
+        text-align: center;
+    }
+    
+}
+
+
+@media (max-width: $md) {
+    .footer__pratique {
+        display: none;
+    }
+}
+
+@media (min-width: $sm) and (max-width: $lg) {
+    .infosJunku {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 10px;
+    }
+
+}
+
+
+
+
+

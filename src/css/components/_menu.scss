@@ -1,0 +1,52 @@
+@use '../utils/variables' as *;
+@use '../utils/fonts';
+
+.header__menu {
+    width: 80%;
+    padding-left: $space-20;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+/* ----------- MENU ICONS ----------- */
+
+.header__menuIcons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: $space-20;
+}
+
+.menuIcons__list {
+    display: flex;
+    flex-direction: row;
+    gap: $space-10;
+}
+
+.menuIcons__item {
+    gap: $space-10;
+}
+
+.menuIcons__item img{
+    width: 3.5rem;
+}
+
+
+/* ----------- MENU PRINCIPAL ----------- */
+
+.mainMenu__list {
+    display: flex;
+    flex-direction: row;
+    gap: $space-20;
+
+}
+
+.mainMenu__item {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: $fs-20;
+    font-weight: 600;
+    text-transform: uppercase;
+}

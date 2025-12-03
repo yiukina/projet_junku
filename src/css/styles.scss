@@ -1,0 +1,37 @@
+/* -------- BASE ---------*/
+
+@use 'base/main';
+
+
+
+
+
+/* -------- UTILS ---------*/
+@use 'utils/variables';
+@use 'utils/fonts';
+
+
+/* -------- VENDORS ---------*/
+
+
+
+/* -------- LAYOUT ---------*/
+
+@use 'layout/header';
+@use 'layout/footer';
+@use 'layout/section';
+
+/* -------- COMPONENTS ---------*/
+
+@use 'components/menu';
+@use 'components/rechercheHeader';
+@use 'components/newsletter';
+@use 'components/hero';
+@use 'components/btn';
+@use 'components/btnPanier';
+@use 'components/card_nouveaute';
+@use 'components/btnFavorite';
+@use 'components/accueilParcours';
+@use 'components/accueilCarousel';
+@use 'components/coupdecoeur';
+@use 'components/actualite';

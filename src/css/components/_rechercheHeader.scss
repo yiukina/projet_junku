@@ -1,0 +1,24 @@
+@use '../utils/variables' as *;
+@use '../utils/fonts';
+
+/* ----------- RECHERCHE ----------- */
+
+.recherche__form {
+    border: 1px solid $darkblue;    
+    display: flex;
+    align-items: center;
+}
+
+.recherche__form input[type=text] {
+    height: 3.5rem;
+    width: 20rem;
+    padding: 0 $space-10;
+}
+
+.recherche__form button {
+    background-color: $white;
+    border: none;
+    height: 3.5rem;
+    width: 3.5rem;
+    padding: 0 $space-10;
+}

@@ -1,0 +1,64 @@
+@use '../utils/variables' as *;
+@use '../utils/fonts';
+
+/* ----------- NEWSLETTER ----------- */
+
+.footer__newsletter {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter {
+    border-bottom: 1px solid $white;
+    display: flex;
+    flex-direction: row;
+}
+
+.newsletter__title {
+    font-size: $fs-20;
+    
+}
+
+.newsletter__form input[type=email] {
+    width: 35rem;
+    height: 5rem;
+    padding: $space-10;
+    border-radius: 5px 0 0 5px;
+    font-size: $fs-14;
+    border: 0;
+}
+
+.newsletter__form button {
+    width: 15rem;
+    height: 5rem;
+    border-radius: 0 5px 5px 0;
+    background-color: $red;
+    color: $white;
+    font-size: $fs-16;
+    text-transform: uppercase;
+    border: 0;
+}
+
+
+
+/*-------------- MEDIA QUERIES --------------*/
+
+@media (max-width: $sm) {
+    .newsletter__form form .sticky_button {
+        position: unset;
+    }
+}
+
+@media (max-width: $lg) {
+    .newsletter {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: $space-20;
+    }
+    .newsletter__form input[type=email] {
+        max-width: 35rem;
+    }
+    .newsletter__form button {
+        max-width: 15rem;
+    }
+}

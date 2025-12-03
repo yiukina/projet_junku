@@ -1,0 +1,60 @@
+@use '../utils/variables' as *;
+@use '../utils/fonts';
+
+.actualite__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: $space-10;
+}
+
+.actualite__card {
+    width: 38rem;
+    height: 20rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: $space-10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.actualite__cardTitle {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    text-transform: uppercase;
+    font-size: $fs-20;
+    font-weight: 600;
+}
+
+.actualite__cardIntro {
+    display: flex;
+    flex-direction: row;
+    gap: $space-10;
+}
+
+.actualite__cardImg {
+    width: 10rem;
+    height: 10rem;
+}
+
+.actualite__cardLink {
+    font-size: $fs-14;
+    align-self: flex-end;
+}
+
+.actualite__cardHidden {
+    display: none;
+}
+
+
+/*-------------- MEDIA QUERIES --------------*/
+
+@media (max-width:$xl) {
+    
+    .actualite__cardHidden {
+        display: flex;
+    }
+
+}
+
+

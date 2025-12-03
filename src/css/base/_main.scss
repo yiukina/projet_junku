@@ -1,0 +1,67 @@
+@use '../utils/variables' as *;
+@use '../utils/fonts';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+     
+}
+
+html {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 62.5%;
+    color: $black;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    text-transform: uppercase;
+}
+
+h1, h2 {
+    color: $darkblue;
+}
+
+h1 {
+    font-size: $fs-30;
+}
+
+h2 {
+    font-size: $fs-24;
+    font-weight: 700;
+    padding-left: $space-100;
+    margin-bottom: $space-20;
+}
+
+p, span, ul {
+    font-size: $fs-14;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+
+.list-unstyled {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sticky_button {
+    display: flex;
+    position: sticky;
+}
+
+input {
+    border: none;
+}
+
+.hidden {
+    display: none;
+}

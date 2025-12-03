@@ -1,0 +1,95 @@
+@use '../utils/variables' as *;
+@use '../utils/fonts';
+
+.likedBook {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.likedBook__intro {
+    max-width: 60rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+}
+
+.likedBook__img {
+    width: 60rem;
+    max-width: 100%;
+    height: 40rem;
+    object-fit: cover;
+    object-position: 0 80%;
+}
+
+.likedBook__cover {
+    height: 30rem;
+    margin-left: -20rem;
+}
+
+.likedBook__infos {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.likedBook__title {
+    padding: 0;
+}
+
+.likedBook__titleBook {
+    font-weight: 700;
+    font-size: $fs-30;
+}
+
+.likedBook__btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+
+/*-------------- MEDIA QUERIES --------------*/
+
+@media (max-width: $sm) {
+    .section__likedbook {
+        height: 100%;
+        padding: $space-10;
+    }
+
+    .likedBook__intro {
+        flex-direction: column;
+    }
+
+}
+
+
+@media (max-width: $md) {
+
+    .likedBook {
+        justify-content: center;
+    }
+    .likedBook__containerCover {
+        display: none;
+    }
+    .likedBook__cover {
+        margin-left: 0;
+    }
+    .likedBook__btn {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:$xl) {
+
+    .likedBook__img {
+        max-width: 100%;
+    }
+
+}
+
+

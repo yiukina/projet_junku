@@ -1,0 +1,195 @@
+@use '../utils/variables' as *;
+@use '../utils/fonts';
+
+
+.accueilCaroussel {
+  max-width: 580px;
+  width: 100%;
+  margin: $space-50 0 ;
+  opacity: 0;
+  position: relative;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  -webkit-animation: 1s appear 1 forwards;
+  -moz-animation: 1s appear 1 forwards;
+  -o-animation: 1s appear 1 forwards;
+  animation: 1s appear 1 forwards;
+}
+
+.slide__title {
+    position: absolute;
+    top: $space-20;
+    left: $space-20;
+    color: $white;
+    font-size: $fs-24;
+    font-weight: 800;
+    -webkit-text-stroke: 0.5px $black;
+}
+
+.slide__btn {
+    position: absolute;
+    bottom: $space-20;
+    right: $space-20;
+    color: $white;
+    font-weight: 800;
+    -webkit-text-stroke: 0.5px $black;
+}
+
+.stage { 
+  max-width: 580px;
+  width: 100%;
+  height: 400px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.slide {
+  width: 380px;
+  transform-origin: 50% 50%;
+  height: inherit;
+  display: inline-block;
+  margin-right: 0.2rem;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.slide.active, .slide.active .slide_img {
+  width: 380px;
+  height: 300px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.slide.active .slide__title, .slide.active .slide__btn {
+  visibility: visible;
+}
+
+.slide.inactive, .slide.inactive .slide_img {
+  width: 90px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  opacity: 0.5;
+}
+.slide.inactive .slide__title, .slide.inactive .slide__btn {
+  visibility: hidden;
+}
+
+.slide_img {
+    width: 380px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.slide:last-of-type {
+  margin: 0;
+}
+
+.bi-arrow-right-circle {
+  vertical-align: middle;
+}
+@media all and (min-width: $md) {
+  .accueilCaroussel {
+    width: 550px;
+  }
+  .slide {
+    width: 350px;
+  }
+  .slide.inactive {
+    width: 90px;
+  }
+  .slide.active, .slide.active .slide_img {
+    width: 350px;
+  }
+  .stage {
+    max-width: 550px;
+    height: 300px;
+  } 
+
+}
+@media all and (max-width: $md) {
+  .stage {
+    height: 100%;
+  }
+}
+
+@media all and (max-width: 660px) {
+  .accueilCaroussel {
+    max-width: 100%;
+  }
+  .slide {
+    width: 100%;
+  }
+  .slide.inactive {
+    width: 61px;
+  }
+  .slide.active {
+    width: 100%;
+  }
+  .stage {
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .slide.active, .slide.active .slide_img {
+    width: 100%;
+    height: 25rem;
+  }
+  .slide.inactive, .slide.inactive .slide_img {
+    width: 100%;
+    height: 10rem;
+  }
+}
+
+
+@-webkit-keyframes appear {
+  15% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes appear {
+  15% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes appear {
+  15% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  15% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
