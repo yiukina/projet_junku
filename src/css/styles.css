@@ -462,7 +462,21 @@ input {
   font-weight: 700;
 }
 
-.btnPanier:hover {
+.btnPanier_140 {
+  display: inline-block;
+  text-align: center;
+  max-width: 16rem;
+  background-color: #ffffff;
+  border: 3px solid #E45454;
+  padding: 1rem 1rem;
+  margin: 2rem 0;
+  color: #E45454;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.btnPanier:hover, .btnPanier_140:hover {
   background-color: #E45454;
   color: #ffffff;
 }

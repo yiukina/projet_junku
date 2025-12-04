@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUNKU</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="src/js/script.js"></script>
+</head>
+
+
+<body>
+
+    <header class="header">
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="assets/logo/junku_logo_original.webp" alt="" class="junku__logoImg">
+            </a>
+        </div>
+
+        <div class="header__menu">
+            <div class="header__menuIcons">
+                <div class="recherche__form">
+                    <form action="" method="post">
+                        <div class="sticky_button">
+                            <input type="text" name="menuRecherche" id="" placeholder="Recherche">
+                            <button type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                            </svg>
+                            </button>
+                        </div>
+                        
+                    </form>
+                </div>
+                <div class="menuIcons">
+                    <ul class="list-unstyled menuIcons__list">
+                        
+                        <li class="menuIcons__item"><a href=""><img src="assets/icons/account_icon.svg" alt=""></a></li>
+                        <li class="menuIcons__item"><a href=""><img src="assets/icons/path_iconv2.svg" alt=""></a></li>
+                        <li class="menuIcons__item"><a href=""><img src="assets/icons/favmenu_icon.svg" alt=""></a></li>
+                        <li class="menuIcons__item"><a href=""><img src="assets/icons/shopbagfilled_icon.svg" alt=""></a></li>
+                    </ul>
+                </div>
+
+                
+            </div>
+
+            <div class="mainMenu">
+                <nav class="mainMenu__nav">
+                    <ul class="list-unstyled mainMenu__list">
+                        <li class="mainMenu__item">Catalogue</li>
+                        <li class="mainMenu__item">Parcours Thématiques</li>
+                        <li class="mainMenu__item">Lifestyle</li>
+                        <li class="mainMenu__item">Actualités</li>
+                        <li class="mainMenu__item">Contact</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+  
+    </header>
+
+
+
+    <main>
+
+        <section class="section">
+            <article class="section__w product">
+                <div class="product__slider">
+                    carrousel image
+                </div>
+
+                <div class="product__infos">
+                    <div class="product__primaryInfos">
+                        <h1>Les recettes culte - Tokyo</h1>
+                        <p>de <span>Maori Murota</span></p>
+                        <span>étoiles</span>
+                        <div>
+                            <span>Cuisine</span>
+                        </div>
+
+                        <p> Ce livre propose une promenade en immersion totale dans le goût de Tokyo avec des recettes et un reportage photo. Découvrir les bars à gyozas, les spots de ramen, les pâtisseries au thé vert ou au sésame... ses bentos à emporter sous les cerisiers... mais aussi et surtout qu'est-ce qu'on mange à la maison. Les petits plus en dessins : cours de sushis, de gyoza et bentos. Un carnet de recettes en voyage. 100 recettes en photos.</p>
+
+                    </div>
+                    <div class="product__secondaryInfos">
+                        <div>
+                            <span>Éditeur</span>
+                            <span>Marabout</span>
+                        </div>
+                        <div>
+                            <span>Date de parution</span>
+                            <span>30/09/2020</span>
+                        </div>
+                        <div>
+                            <span>ISBN/EAN</span>
+                            <span>9782501136440</span>
+                        </div>
+                        <div>
+                            <span>Pages</span>
+                            <span>272</span>
+                        </div>
+                        <div>
+                            <span>Langue</span>
+                            <span>Français</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="product__cart">
+
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <article class="section__w likeToo">
+                <p class="likeToo__bigTitle">Vous aimerez aussi...</p>
+                <div class="likeToo__div">
+                    <div class="likeToo__card">
+                        <div class="likeToo__cardInfos">
+                            <img src="" alt="">
+                            <p class="likeToo__title">titre</p>
+                            <p class="likeToo__author">auteur</p>
+                            <span class="likeToo__reviews">5 étoiles</span>
+                            <div class="likeToo__cardEven">
+                                <span class="likeToo__cardPrice">44.95 €</span>
+                                <span class="likeToo__cardStock">En stock</span>
+                            </div>
+                        </div>
+                        <div class="likeToo__cardEven">
+                            <button class="btnFavorite"></button>
+                            <a href=""><span class="btnPanier_140">Ajouter au panier</span></a>
+                        </div>
+                    </div>
+
+                    <div class="likeToo__card">
+                        <div class="likeToo__cardInfos">
+                            <img src="" alt="">
+                            <p class="likeToo__title">titre</p>
+                            <p class="likeToo__author">auteur</p>
+                            <span class="likeToo__reviews">5 étoiles</span>
+                            <div class="likeToo__cardEven">
+                                <span class="likeToo__cardPrice">44.95 €</span>
+                                <span class="likeToo__cardStock">En stock</span>
+                            </div>
+                        </div>
+                        <div class="likeToo__cardEven">
+                            <button class="btnFavorite"></button>
+                            <a href=""><span class="btnPanier_140">Ajouter au panier</span></a>
+                        </div>
+                    </div>
+
+                    <div class="likeToo__card">
+                        <div class="likeToo__cardInfos">
+                            <img src="" alt="">
+                            <p class="likeToo__title">titre</p>
+                            <p class="likeToo__author">auteur</p>
+                            <span class="likeToo__reviews">5 étoiles</span>
+                            <div class="likeToo__cardEven">
+                                <span class="likeToo__cardPrice">44.95 €</span>
+                                <span class="likeToo__cardStock">En stock</span>
+                            </div>
+                        </div>
+                        <div class="likeToo__cardEven">
+                            <button class="btnFavorite"></button>
+                            <a href=""><span class="btnPanier_140">Ajouter au panier</span></a>
+                        </div>
+                    </div>
+
+                    <div class="likeToo__card">
+                        <div class="likeToo__cardInfos">
+                            <img src="" alt="">
+                            <p class="likeToo__title">titre</p>
+                            <p class="likeToo__author">auteur</p>
+                            <span class="likeToo__reviews">5 étoiles</span>
+                            <div class="likeToo__cardEven">
+                                <span class="likeToo__cardPrice">44.95 €</span>
+                                <span class="likeToo__cardStock">En stock</span>
+                            </div>
+                        </div>
+                        <div class="likeToo__cardEven">
+                            <button class="btnFavorite"></button>
+                            <a href=""><span class="btnPanier_140">Ajouter au panier</span></a>
+                        </div>
+                    </div>
+
+                    <div class="likeToo__card">
+                        <div class="likeToo__cardInfos">
+                            <img src="" alt="">
+                            <p class="likeToo__title">titre</p>
+                            <p class="likeToo__author">auteur</p>
+                            <span class="likeToo__reviews">5 étoiles</span>
+                            <div class="likeToo__cardEven">
+                                <span class="likeToo__cardPrice">44.95 €</span>
+                                <span class="likeToo__cardStock">En stock</span>
+                            </div>
+                        </div>
+                        <div class="likeToo__cardEven">
+                            <button class="btnFavorite"></button>
+                            <a href=""><span class="btnPanier_140">Ajouter au panier</span></a>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+        </section>
+
+        <section class="section">
+            <article class="section__w reviews">
+                <p class="reviews__Title">Avis client</p>
+
+                <div class="reviews__div">
+                    <div class="reviews__survey">
+                        <span>4.8</span>
+                        <span>étoiles</span>
+                        <span>76 avis</span>
+
+                        <div class="reviews__star fiveStar">
+                            <span>5 étoiles</span>
+                        </div>
+                        <div class="reviews__star fourStar">
+                            <span>4 étoiles</span>
+                        </div>
+                        <div class="reviews__star thirdStar">
+                            <span>3 étoiles</span>
+                        </div>
+                        <div class="reviews__star twoStar">
+                            <span>2 étoiles</span>
+                        </div>
+                        <div class="reviews__star OneStar">
+                            <span>1 étoiles</span>
+                        </div>
+                        
+
+                    </div>
+                    <div class="reviews__gallery">
+                        <div class="reviews__container">
+                            <div class="reviews__client">
+                                <p class="reviews__clientName">Océanne</p>
+                                <span class="reviews__clientSurvey">Etoiles</span>
+                            </div>
+                            <div class="reviews__date">
+                                <p>04/11/2025</p>
+                            </div>
+                            <div class="reviews__clientComment">
+                                <p>Enfin un livre très complet qui aborde la cuisine japonaise de façon large et authentique. Il est bien illustré par diverses images d'ustensiles ou des recettes à préparer, avec quelques pas à pas. Nous adorons ce livre qui nous sert régulièrement, et qui m'a initié à une cuisine japonaise que j'adore. On sort des traditionnels sushis et makis en tous genres.</p>
+                            </div>
+                        </div>
+
+                        <div class="reviews__container">
+                            <div class="reviews__client">
+                                <p class="reviews__clientName">Boravie</p>
+                                <span class="reviews__clientSurvey">Etoiles</span>
+                            </div>
+                            <div class="reviews__date">
+                                <p>04/11/2025</p>
+                            </div>
+                            <div class="reviews__clientComment">
+                                <p>Ce livre est certes beau (superbe couverture, photos des plats et d'ambiance de la ville), mais surtout il contient des recettes intéressantes. Exit ou presque les classiques sushis et autres makis, il met en avant de nombreuses autres recettes de tous les jours, plus ou moins compliquées à réaliser, mettant en oeuvre nouilles, poissons, viandes, légumes, fritures, etc. Je dois dire aussi que je l'ai acheté pour ses quelques recettes sucrées qui sont plutôt rares à trouver dans les livres de cuisine japonaise : mitarashi dango, daifuku mochi, dorayaki, sorbet au yuzu ou au shiso, etc. Maintenant, il ne me reste plus qu'à toutes les tester !</p>
+                            </div>
+                        </div>
+
+                        <div class="reviews__container">
+                            <div class="reviews__client">
+                                <p class="reviews__clientName">Lucas</p>
+                                <span class="reviews__clientSurvey">Etoiles</span>
+                            </div>
+                            <div class="reviews__date">
+                                <p>04/11/2025</p>
+                            </div>
+                            <div class="reviews__clientComment">
+                                <p>Super livre avec des recettes authentiques originales et authentiques. Chacune donne envie d'être réalisée. Les photos sont magnifiques. Petit bémol : la taille du livre est réduite et la police est minuscule, il va me falloir une loupe pour lire les recettes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+
+        </section>
+
+
+    </main>
+
+
+
+
+
+
+    <footer class="footer">
+        <section class="section__w">
+            <div class="footer__container newsletter">
+                <div class="footer__newsletter">
+                    <p class="footer__Title newsletter__title">Abonnez-vous à notre newsletter</p>
+                    <p class="newsletter__intro">Pour recevoir toutes nos actualités, évènements, et les dernières nouveautés</p>
+                </div>
+                
+                <div class="newsletter__form">
+                    <form action="" method="post">
+                        <div class="sticky_button">
+                            <input type="email" name="emailNewsletter" id="" placeholder="S'inscrire à la newsletter">
+                            <button type="submit">S'inscrire</button>
+                        </div>
+                        
+                    </form>
+                </div>
+                
+
+            </div>
+
+            <div class="footer__container">
+                <div class="footer__logo">
+                    <a href=""><img src="assets/logo/junku_logo_blanc.webp" class="footer__imgLogo" alt=""></a>
+                </div>
+                
+
+                <div class="footer__infos">
+                    <p class="footer__Title">Librairie Junku</p>
+
+                    <div class="infosJunku">
+                        <div class="footer__card">
+                            <img class="infosJunku__icon" src="assets/icons/google-maps_icon.svg" alt="">
+                            <p class="infosJunku__text">18 rue des Pyramides</p>
+                        </div>
+                        <div class="footer__card">
+                            <img class="infosJunku__icon" src="assets/icons/phone_icon.svg" alt="">
+                            <p class="infosJunku__text">01 42 60 89 12</p>
+                        </div>                    
+                        <div class="footer__card">
+                            <img class="infosJunku__icon" src="assets/icons/clock_icon.svg" alt="">
+                            <div>
+                                <p class="infosJunku__text">Du lundi au samedi</p>
+                                <p class="infosJunku__text">de 10h à 19h</p>
+                            </div>
+                            
+                        </div>
+                        <div class="footer__card">
+                            <img class="infosJunku__icon" src="assets/icons/at_icon.svg" alt="">
+                            <p class="infosJunku__text">contact@junku.fr</p>
+                        </div>                    
+                    </div>
+                    
+                </div>
+                <div class="footer__pratique">
+                    <div class="footer__card">
+                        <img src="assets/icons/credit-card_icon.svg" class="pratique__icon" alt="">
+                        <p class="footer__Title">Paiement sécurisé</p>
+                    </div>
+                    <div class="footer__card">
+                        <img src="assets/icons/delivery_icon.svg" class="pratique__icon" alt="">
+                        <p class="footer__Title">Livraison 24h/48h</p>
+                    </div>
+                    <div class="footer__card">
+                        <img src="assets/icons/phone_icon.svg" class="pratique__icon" alt="">
+                        <div>
+                            <p class="footer__Title">Service client</p>
+                            <p class="pratique__Text">Du lundi au vendredi de 10h à 17h par téléphone au 01 42 60 89 12 ou par mail à contact@junku.fr</p>
+                        </div>
+                        
+                    </div>                        
+                </div>
+                <div class="footer__social">
+                    <p class="footer__Title">Suivez- nous</p>
+                    <div class="social">
+                        <img src="assets/icons/Facebook.svg" class="social__logo" alt="">
+                        <img src="assets/icons/Instagram.svg" class="social__logo" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class=" footer__container">
+                <p class="footer__copyright">Junku.fr © 2025</p>
+                <ul class="list-unstyled footer__mentionsList">
+                    <li class="footer__mentionsItem">Mentions légales</li>
+                    <li class="footer__mentionsItem">Conditions générales de vente</li>
+                    <li class="footer__mentionsItem">Protection des données</li>
+                </ul>
+            </div>
+
+        </section>
+    </footer>
+    
+</body>
+</html>
