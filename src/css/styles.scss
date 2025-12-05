@@ -3,12 +3,11 @@
 @use 'base/main';
 
 
-
-
-
 /* -------- UTILS ---------*/
+
 @use 'utils/variables';
 @use 'utils/fonts';
+@use 'utils/mixins';
 
 
 /* -------- VENDORS ---------*/
@@ -35,3 +34,6 @@
 @use 'components/accueilCarousel';
 @use 'components/coupdecoeur';
 @use 'components/actualite';
+@use 'components/produit';
+@use 'components/thumbnailSlider';
+@use 'components/btnQty';

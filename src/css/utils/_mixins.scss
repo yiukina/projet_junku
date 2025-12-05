@@ -1,0 +1,16 @@
+@use 'variables' as *;
+@use 'fonts';
+
+@mixin box_shadow {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@mixin flex_row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex_column {
+    display: flex;
+    flex-direction: column;
+}

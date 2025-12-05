@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="src/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
     <script src="src/js/script.js"></script>
 </head>
 
@@ -75,10 +76,12 @@
 
                 <div class="product__infos">
                     <div class="product__primaryInfos">
-                        <h1>Les recettes culte - Tokyo</h1>
-                        <p>de <span>Maori Murota</span></p>
-                        <span>étoiles</span>
-                        <div>
+                        <h1 class="product__title">Les recettes culte - Tokyo</h1>
+                        <p class="product__author">de <span>Maori Murota</span></p>
+                        <span>5 étoiles</span>
+                        
+                        
+                        <div class="product__tag">
                             <span>Cuisine</span>
                         </div>
 
@@ -112,6 +115,25 @@
                 </div>
 
                 <div class="product__cart">
+                    <div class="product__cartPrice">
+                        <div>
+                            <p class="productCart__Price">10,90 €</p>
+                            <span class="productCart__tva">Tva incluse</span>
+                        </div>
+                        <div>
+                            <p class="cartPrice__stock">En Stock</p>
+                        </div>
+                        
+                    </div>
+                    <div class="qty-input">
+                        <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                        <input class="product-qty" type="number" name="product-qty" min="0" max="10" value="1">
+                        <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                    </div>
+                    <div class="product__cartBtn">
+                        <a href=""><span class="btnPanier">Ajouter au panier</span></a>
+                        <a href=""><span class="btnInverse">Ajouter aux favoris</span></a>
+                    </div>
 
                 </div>
             </article>
@@ -213,7 +235,7 @@
         <section class="section">
             <article class="section__w reviews">
                 <p class="reviews__Title">Avis client</p>
-
+                https://www.w3schools.com/howto/howto_css_user_rating.asp
                 <div class="reviews__div">
                     <div class="reviews__survey">
                         <span>4.8</span>

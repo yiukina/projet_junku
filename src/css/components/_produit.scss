@@ -1,4 +1,70 @@
 @use '../utils/variables' as *;
-@use '../utils/mixin';
+@use '../utils/mixins' as *;
 @use '../utils/fonts';
 
+.product {
+    @include flex_row;
+    gap: $space-20;
+}
+
+.product__infos {
+    width: 38rem;
+    @include flex_column;
+    gap: 5rem;
+}
+
+.product__primaryInfos {
+    @include flex_column;
+    gap: $space-10;
+}
+
+.product__author {
+    font-size: $fs-16;
+
+    > span {
+    color: $darkblue;
+    font-size: $fs-16;
+    }
+}
+
+.product__tag {
+    margin: 3.5rem 0 ;
+
+    > span {
+        padding: $space-10 $space-20;
+        background-color: $backgroundNav;
+    }
+}
+
+.product__cart {
+    width: 28rem;
+    max-height: 30rem;
+    padding: 3rem;
+    @include box_shadow;
+    @include flex_column;
+    justify-content: space-between;
+}
+
+.product__cartPrice {
+    @include flex_row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.productCart__Price {
+    font-size: $fs-20;
+    font-weight: 700;
+}
+.productCart__tva {
+    font-size: $fs-12;
+}
+.cartPrice__stock {
+    text-transform: uppercase;
+    font-size: $fs-16;
+    font-weight: 600;
+}
+
+.product__cartBtn {
+    display: flex;
+    flex-direction: column;
+}

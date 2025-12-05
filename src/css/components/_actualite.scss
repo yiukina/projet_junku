@@ -1,5 +1,5 @@
 @use '../utils/variables' as *;
-@use '../utils/mixin';
+@use '../utils/mixins' as *;
 @use '../utils/fonts';
 
 .actualite__container {
@@ -11,9 +11,9 @@
 }
 
 .actualite__card {
+    @include box_shadow;
     width: 38rem;
     height: 20rem;
-    @include box-shadow;
     padding: $space-10;
     display: flex;
     flex-direction: column;
