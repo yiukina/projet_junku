@@ -146,8 +146,7 @@
   .stage {
     max-width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    @include flex_column;
   }
   .slide.active, .slide.active .slide_img {
     width: 100%;
