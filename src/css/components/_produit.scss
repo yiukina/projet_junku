@@ -67,3 +67,12 @@
 .product__cartBtn {
     @include flex_column;
 }
+
+.product__secondaryInfos {
+    @include flex_column;
+
+    > div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
