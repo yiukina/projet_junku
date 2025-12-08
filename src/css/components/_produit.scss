@@ -65,6 +65,5 @@
 }
 
 .product__cartBtn {
-    display: flex;
-    flex-direction: column;
+    @include flex_column;
 }

@@ -3,16 +3,14 @@
 @use '../utils/fonts';
 
 .likedBook {
-    display: flex;
-    flex-direction: row;
+    @include flex_row;
     justify-content: space-between;
     
 }
 
 .likedBook__intro {
     max-width: 60rem;
-    display: flex;
-    flex-direction: row;
+    @include flex_row;
     align-items: center;
     gap: 3rem;
 }
@@ -32,8 +30,7 @@
 
 .likedBook__infos {
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    @include flex_column;
     justify-content: space-evenly;
 }
 .likedBook__title {
@@ -46,8 +43,7 @@
 }
 
 .likedBook__btn {
-    display: flex;
-    flex-direction: row;
+    @include flex_row;
     justify-content: space-evenly;
 
 }

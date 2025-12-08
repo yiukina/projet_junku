@@ -22,8 +22,7 @@
 }
 
 .newbook__card {
-    display: flex;
-    flex-direction: column;
+    @include flex_column;
     justify-content: space-evenly;
     text-transform: uppercase;
     font-weight: 700;
@@ -43,14 +42,12 @@
 }
 
 .newbook__cardInfos {
-    display: flex;
-    flex-direction: column;
+    @include flex_column;
     gap: $space-15;
 }
 
 .newbook__cardEven {
-    display: flex;
-    flex-direction: row;
+    @include flex_row;
     align-items: center;
     justify-content: space-evenly;
 }

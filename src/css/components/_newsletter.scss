@@ -5,8 +5,7 @@
 /* ----------- NEWSLETTER ----------- */
 
 .footer__newsletter {
-    display: flex;
-    flex-direction: column;
+    @include flex_column;
 }
 
 .newsletter {

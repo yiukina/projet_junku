@@ -9,8 +9,7 @@
 }
 
 .parcoursAccueil {
-    display: flex;
-    flex-direction: row;
+    @include flex_row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;

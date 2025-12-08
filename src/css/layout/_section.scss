@@ -5,8 +5,7 @@
 .section {
     margin-bottom: $space-20;
     padding: $space-20 $space-10;
-    display: flex;
-    flex-direction: row;
+    @include flex_row;
     justify-content: center;
 }
 

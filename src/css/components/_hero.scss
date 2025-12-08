@@ -3,8 +3,7 @@
 @use '../utils/fonts';
 
 .hero {
-    display: flex;
-    flex-direction: row;
+    @include flex_row;
     justify-content: center;
     align-items: center;
 }
@@ -45,8 +44,7 @@
 }
 
 .hero__intro {
-    display: flex;
-    flex-direction: column;
+    @include flex_column;
     align-items: center;
 }
 

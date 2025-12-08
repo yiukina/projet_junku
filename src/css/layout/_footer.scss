@@ -6,8 +6,7 @@
     background-color: $darkblue; 
     padding: 0 $space-25;
     color: $white;
-    display: flex;
-    flex-direction: row;
+    @include flex_row;
     justify-content: center;
 }
 
@@ -18,8 +17,7 @@
 }
 
 .footer__card {
-    display: flex;
-    flex-direction: row;
+    @include flex_row;
     align-items: center;
     gap: $space-10;
 }
@@ -27,8 +25,7 @@
 /* ----------- container----------- */
 
 .footer__container {
-    display: flex;
-    flex-direction: row;
+    @include flex_row;
     align-items: center;
     justify-content: space-between;
     padding: $space-25 0;
@@ -75,14 +72,12 @@
 
 .footer__social {
     max-width: 12rem;
-    display: flex;
-    flex-direction: column;
+    @include flex_column;
     align-items: center;
 }
 
 .social {
-    display: flex;
-    flex-direction: row;
+    @include flex_row;
     align-items: center;
 }
 
