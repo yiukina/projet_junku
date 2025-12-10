@@ -1,0 +1,14 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+@use '../utils/fonts';
+
+.reviews__survey {
+    @include flex_row;
+    gap: $space-20;
+}
+.reviews__container {
+    width: 38rem;
+    padding: $space-15;
+    @include box_shadow;
+}
+

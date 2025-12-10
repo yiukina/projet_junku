@@ -1,0 +1,48 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+@use '../utils/fonts';
+
+.likeToo {
+    @include flex_column;
+    gap: $space-30;
+}
+
+.likeToo__bigTitle {
+    @include bigTitle;
+}
+
+.likeToo__card {
+    width: 22rem;
+    height: 40rem;
+    padding: $space-10 $space-15;
+    @include box_shadow;
+    @include flex_column;
+    justify-content: space-between;
+
+}
+.likeToo__container {
+    @include flex_row;
+    justify-content: space-between;
+}
+.likeToo__cardInfos {
+    @include flex_column;
+    gap: 0.5rem;
+
+    > img {
+        align-self: center;
+        max-width: 16rem;
+        height: 20rem;
+    }
+}
+
+.likeToo__title {
+    font-weight: 700;
+}
+
+.likeToo__cardEven {
+    @include flex_row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
