@@ -11,4 +11,12 @@
     padding: $space-15;
     @include box_shadow;
 }
+.reviews__note {
+    height: 34rem;
+}
 
+.reviews__gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $space-15;
+}
