@@ -2,9 +2,15 @@
 @use '../utils/mixins' as *;
 @use '../utils/fonts';
 
+.reviews {
+    @include flex_column;
+    gap: $space-30;
+}
+
 .reviews__survey {
     @include flex_row;
     gap: $space-20;
+    padding-top: $space-20;
 }
 .reviews__container {
     width: 38rem;
@@ -13,10 +19,121 @@
 }
 .reviews__note {
     height: 34rem;
+    width: 38rem;
+}
+.star {
+  @include star();
 }
 
 .reviews__gallery {
+    width: 76rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-gap: $space-15;
     gap: $space-15;
+    grid-template-columns: repeat(2, minmax(25rem,1fr));
+    grid-auto-rows: $space-25;
+}
+
+.reviews__client {
+    @include flex_row;
+    justify-content: space-between;
+    border-bottom: 1px solid $fadedjade;
+    padding-bottom: $space-10;
+}
+.reviews__clientName {
+    font-weight: 600;
+}
+.reviews__clientSurvey {
+    color: $red;
+    font-size: $fs-20;
+}
+.reviews__date {
+    text-align: right;
+    font-weight: 300;
+    margin: $space-10 0;
+}
+.reviews__clientComment {
+    padding: $space-15;
+}
+.reviews__note {
+    @include flex_column;
+    justify-content: center;
+    align-items: center;
+}
+.reviews__globalNote {
+    font-size: $fs-30;
+    font-weight: 700;
+}
+.reviews__nbVote {
+    font-weight: 300;
+}
+.reviews__barProgress {
+    margin: $space-20 0;
+}
+.reviews__star {
+    @include flex_row;
+    align-items: center;
+    gap: $space-10;
+    > p:first-child span {
+        color: $red;
+    }
+    
+}
+progress {
+  width: 18rem;
+  height: $space-10;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #eee;
+}
+
+/* Chrome, Safari, Edge */
+progress::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 10px;
+}
+progress::-webkit-progress-value {
+  background-color: $red;
+  border-radius: 10px;
+}
+
+/* Firefox */
+progress::-moz-progress-bar {
+  background-color: $red;
+  border-radius: 10px;
+}
+
+/* IE */
+progress::-ms-fill {
+  background-color: $red;
+}
+
+/*-------------------------------------- STAR ---------------------------------------*/
+.rate {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 5px;
+}
+
+.rate input {
+  /* Inputs invisibles mais focusables */
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.rate label {
+  font-size: 3rem;
+  color: $gray; /* Couleur par défaut */
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+/* Hover et sélection */
+.rate label:hover,
+.rate label:hover ~ label,
+.rate input:checked ~ label {
+  color: $red; /* Couleur des étoiles sélectionnées */
 }

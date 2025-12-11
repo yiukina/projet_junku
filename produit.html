@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="src/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    
     <script src="src/js/script.js"></script>
 </head>
 
@@ -236,78 +235,164 @@
         <section class="section">
             <article class="section__w reviews">
                 <p class="reviews__bigTitle">Avis client</p>
-                https://codepen.io/antoniasymeonidou/pen/WNGdvvQ
+                <!-- https://codepen.io/antoniasymeonidou/pen/WNGdvvQ -->
                 <div class="reviews__survey">
                     <div class="reviews__container reviews__note">
-                        <span>4.8</span>
-                        <span>étoiles</span>
-                        <span>76 avis</span>
-
+                        <p class="reviews__globalNote">4.8</p>
+                            <div class="rate">
+                                <input type="radio" id="star5" name="rate" value="5" />
+                                <label for="star5" title="text">★</label>
+                                <input type="radio" id="star4" name="rate" value="4" />
+                                <label for="star4" title="text">★</label>
+                                <input type="radio" id="star3" name="rate" value="3" />
+                                <label for="star3" title="text">★</label>
+                                <input type="radio" id="star2" name="rate" value="2" />
+                                <label for="star2" title="text">★</label>
+                                <input type="radio" id="star1" name="rate" value="1" />
+                                <label for="star1" title="text">★</label>
+                            </div>
+                        <p class="reviews__nbVote">134 avis</p>
+                    <div class="reviews__barProgress">
                         <div class="reviews__star fiveStar">
-                            <span>5 étoiles</span>
+                            <p>5 <span>★</span></p>
+                            <progress value="90" max="100"></progress>
+                            <p>115</p>
                         </div>
                         <div class="reviews__star fourStar">
-                            <span>4 étoiles</span>
+                            <p>4 <span>★</span></p>
+                            <progress value="10" max="100"></progress>
+                            <p>15</p>
                         </div>
                         <div class="reviews__star thirdStar">
-                            <span>3 étoiles</span>
+                            <p>3 <span>★</span></p>
+                            <progress value="5" max="100"></progress>
+                            <p>4</p>
                         </div>
                         <div class="reviews__star twoStar">
-                            <span>2 étoiles</span>
+                            <p>2 <span>★</span></p>
+                            <progress value="0" max="100"></progress>
+                            <p>0</p>
                         </div>
                         <div class="reviews__star OneStar">
-                            <span>1 étoiles</span>
+                            <p>1 <span>★</span></p>
+                            <progress value="0" max="100"></progress>
+                            <p>0</p>
                         </div>
+                    </div>       
+                        
                         
 
                     </div>
                     <div class="reviews__gallery">
                         <div class="reviews__container">
-                            <div class="reviews__client">
-                                <p class="reviews__clientName">Océanne</p>
-                                <span class="reviews__clientSurvey">Etoiles</span>
+                            <div class="reviews__content">
+                                <div class="reviews__client">
+                                    <p class="reviews__clientName">Océanne</p>
+                                    <p class="reviews__clientSurvey">★★★★★</p>
+                                </div>
+                                <div class="reviews__date">
+                                    <p>04/11/2025</p>
+                                </div>
+                                <div class="reviews__clientComment">
+                                    <p>Enfin un livre très complet qui aborde la cuisine japonaise de façon large et authentique. Il est bien illustré par diverses images d'ustensiles ou des recettes à préparer, avec quelques pas à pas. Nous adorons ce livre qui nous sert régulièrement, et qui m'a initié à une cuisine japonaise que j'adore. On sort des traditionnels sushis et makis en tous genres.</p>
+                                </div>
                             </div>
-                            <div class="reviews__date">
-                                <p>04/11/2025</p>
-                            </div>
-                            <div class="reviews__clientComment">
-                                <p>Enfin un livre très complet qui aborde la cuisine japonaise de façon large et authentique. Il est bien illustré par diverses images d'ustensiles ou des recettes à préparer, avec quelques pas à pas. Nous adorons ce livre qui nous sert régulièrement, et qui m'a initié à une cuisine japonaise que j'adore. On sort des traditionnels sushis et makis en tous genres.</p>
+                        </div>   
+                        <div class="reviews__container">
+                            <div class="reviews__content">
+                                <div class="reviews__client">
+                                    <p class="reviews__clientName">Boravie</p>
+                                    <p class="reviews__clientSurvey">★★★★★</p>
+                                </div>
+                                <div class="reviews__date">
+                                    <p>04/11/2025</p>
+                                </div>
+                                <div class="reviews__clientComment">
+                                    <p>Ce livre est certes beau (superbe couverture, photos des plats et d'ambiance de la ville), mais surtout il contient des recettes intéressantes. Exit ou presque les classiques sushis et autres makis, il met en avant de nombreuses autres recettes de tous les jours, plus ou moins compliquées à réaliser, mettant en oeuvre nouilles, poissons, viandes, légumes, fritures, etc. Je dois dire aussi que je l'ai acheté pour ses quelques recettes sucrées qui sont plutôt rares à trouver dans les livres de cuisine japonaise : mitarashi dango, daifuku mochi, dorayaki, sorbet au yuzu ou au shiso, etc. Maintenant, il ne me reste plus qu'à toutes les tester !</p>
+                                </div>
                             </div>
                         </div>
 
                         <div class="reviews__container">
-                            <div class="reviews__client">
-                                <p class="reviews__clientName">Boravie</p>
-                                <span class="reviews__clientSurvey">Etoiles</span>
+                            <div class="reviews__content">
+                                <div class="reviews__client">
+                                    <p class="reviews__clientName">Lucas</p>
+                                    <p class="reviews__clientSurvey">★★★★★</p>
+                                </div>
+                                <div class="reviews__date">
+                                    <p>04/11/2025</p>
+                                </div>
+                                <div class="reviews__clientComment">
+                                    <p>Super livre avec des recettes authentiques originales et authentiques. Chacune donne envie d'être réalisée. Les photos sont magnifiques. Petit bémol : la taille du livre est réduite et la police est minuscule, il va me falloir une loupe pour lire les recettes.</p>
+                                </div>
                             </div>
-                            <div class="reviews__date">
-                                <p>04/11/2025</p>
+                        </div>
+                        <div class="reviews__container">
+                            <div class="reviews__content">
+                                <div class="reviews__client">
+                                    <p class="reviews__clientName">Océanne</p>
+                                    <p class="reviews__clientSurvey">★★★★★</p>
+                                </div>
+                                <div class="reviews__date">
+                                    <p>04/11/2025</p>
+                                </div>
+                                <div class="reviews__clientComment">
+                                    <p>Enfin un livre très complet qui aborde la cuisine japonaise de façon large et authentique. Il est bien illustré par diverses images d'ustensiles ou des recettes à préparer, avec quelques pas à pas. Nous adorons ce livre qui nous sert régulièrement, et qui m'a initié à une cuisine japonaise que j'adore. On sort des traditionnels sushis et makis en tous genres.</p>
+                                </div>
                             </div>
-                            <div class="reviews__clientComment">
-                                <p>Ce livre est certes beau (superbe couverture, photos des plats et d'ambiance de la ville), mais surtout il contient des recettes intéressantes. Exit ou presque les classiques sushis et autres makis, il met en avant de nombreuses autres recettes de tous les jours, plus ou moins compliquées à réaliser, mettant en oeuvre nouilles, poissons, viandes, légumes, fritures, etc. Je dois dire aussi que je l'ai acheté pour ses quelques recettes sucrées qui sont plutôt rares à trouver dans les livres de cuisine japonaise : mitarashi dango, daifuku mochi, dorayaki, sorbet au yuzu ou au shiso, etc. Maintenant, il ne me reste plus qu'à toutes les tester !</p>
+                        </div>  
+                        
+                        <div class="reviews__container">
+                            <div class="reviews__content">
+                                <div class="reviews__client">
+                                    <p class="reviews__clientName">Lucas</p>
+                                    <p class="reviews__clientSurvey">★★★★★</p>
+                                </div>
+                                <div class="reviews__date">
+                                    <p>04/11/2025</p>
+                                </div>
+                                <div class="reviews__clientComment">
+                                    <p>Super livre avec des recettes authentiques originales et authentiques. Chacune donne envie d'être réalisée. Les photos sont magnifiques. Petit bémol : la taille du livre est réduite et la police est minuscule, il va me falloir une loupe pour lire les recettes.</p>
+                                </div>
                             </div>
                         </div>
 
                         <div class="reviews__container">
-                            <div class="reviews__client">
-                                <p class="reviews__clientName">Lucas</p>
-                                <span class="reviews__clientSurvey">Etoiles</span>
-                            </div>
-                            <div class="reviews__date">
-                                <p>04/11/2025</p>
-                            </div>
-                            <div class="reviews__clientComment">
-                                <p>Super livre avec des recettes authentiques originales et authentiques. Chacune donne envie d'être réalisée. Les photos sont magnifiques. Petit bémol : la taille du livre est réduite et la police est minuscule, il va me falloir une loupe pour lire les recettes</p>
+                            <div class="reviews__content">
+                                <div class="reviews__client">
+                                    <p class="reviews__clientName">Boravie</p>
+                                    <p class="reviews__clientSurvey">★★★★★</p>
+                                </div>
+                                <div class="reviews__date">
+                                    <p>04/11/2025</p>
+                                </div>
+                                <div class="reviews__clientComment">
+                                    <p>Ce livre est certes beau (superbe couverture, photos des plats et d'ambiance de la ville), mais surtout il contient des recettes intéressantes. Exit ou presque les classiques sushis et autres makis, il met en avant de nombreuses autres recettes de tous les jours, plus ou moins compliquées à réaliser, mettant en oeuvre nouilles, poissons, viandes, légumes, fritures, etc. Je dois dire aussi que je l'ai acheté pour ses quelques recettes sucrées qui sont plutôt rares à trouver dans les livres de cuisine japonaise : mitarashi dango, daifuku mochi, dorayaki, sorbet au yuzu ou au shiso, etc. Maintenant, il ne me reste plus qu'à toutes les tester !</p>
+                                </div>
                             </div>
                         </div>
+
+                        <div class="reviews__container">
+                            <div class="reviews__content">
+                                <div class="reviews__client">
+                                    <p class="reviews__clientName">Lucas</p>
+                                    <p class="reviews__clientSurvey">★★★★★</p>
+                                </div>
+                                <div class="reviews__date">
+                                    <p>04/11/2025</p>
+                                </div>
+                                <div class="reviews__clientComment">
+                                    <p>Super livre avec des recettes authentiques originales et authentiques. Chacune donne envie d'être réalisée. Les photos sont magnifiques. Petit bémol : la taille du livre est réduite et la police est minuscule, il va me falloir une loupe pour lire les recettes.</p>
+                                </div>
+                            </div>
+                        </div>
+                     
                     </div>
                 </div>
 
+                
             </article>
-
         </section>
-
-
     </main>
 
 
