@@ -112,7 +112,13 @@
     .footer__Title {
         text-align: center;
     }
-    
+    .sticky_button {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sticky_button input[type=email],  .sticky_button button {
+        border-radius: 5px 5px 5px 5px !important;
+    }
 }
 
 
