@@ -64,6 +64,10 @@
     font-size: $fs-30;
     font-weight: 700;
 }
+.reviews__global {
+    @include flex_column;
+    gap: $space-20;
+}
 .reviews__nbVote {
     font-weight: 300;
 }
