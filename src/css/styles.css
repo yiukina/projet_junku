@@ -683,6 +683,7 @@ progress::-ms-fill {
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 1rem;
+  margin-top: 3rem;
 }
 
 .actualite__card {
@@ -1317,7 +1318,7 @@ progress::-ms-fill {
   padding: 1.5rem;
 }
 
-.theme__cardImg {
+.theme__img {
   width: 35rem;
   height: 18rem;
   -o-object-fit: cover;
@@ -1363,6 +1364,54 @@ progress::-ms-fill {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1.4rem;
+}
+
+.parcours__card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.parcours__firstPart {
+  display: flex;
+  flex-direction: row;
+  gap: 8rem;
+}
+
+.parcours__imgPrincipale {
+  width: 88rem;
+  height: 33rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.parcours__nombre {
+  background-color: #FFEDD9;
+  width: 15rem;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1.5rem;
+}
+.parcours__nombre > div {
+  display: flex;
+  flex-direction: column;
+}
+.parcours__nombre > div > span:last-child {
+  text-align: right;
+  color: #1A2459;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.parcours__tag {
+  margin: 2.5rem 0;
+}
+.parcours__tag > span {
+  padding: 0.5rem 2rem;
+  background-color: #F8F5EE;
+  font-size: 1.2rem;
 }
 
 .product {

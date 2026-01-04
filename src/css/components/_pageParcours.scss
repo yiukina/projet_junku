@@ -1,0 +1,52 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+@use '../utils/fonts';
+
+
+.parcours__card {
+    @include flex_column;
+    margin-top: $space-30;
+}
+
+.parcours__firstPart {
+    @include flex_row;
+    gap: 8rem;
+}
+
+.parcours__imgPrincipale {
+    width: 88rem;
+    height: 33rem;
+    object-fit: cover;
+}
+
+.parcours__nombre {
+    background-color: $beige;
+    width: 15rem;
+    height: 15rem;
+    @include flex_column;
+    justify-content: space-evenly;
+    padding: $space-15;
+
+    > div {
+        @include flex_column;
+
+        > span:last-child {
+            text-align: right;
+            color: $darkblue;
+            font-size: $fs-20;
+            font-weight: 600;
+        }
+    }
+}
+
+
+
+.parcours__tag {
+    margin: 2.5rem 0 ;
+
+    > span {
+        padding: 0.5rem $space-20;
+        background-color: $backgroundNav;
+        font-size: $fs-12;
+    }
+}
