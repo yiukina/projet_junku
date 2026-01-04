@@ -3,17 +3,12 @@
 @use '../utils/fonts';
 
 .btn {
-    display: inline-block;
-    text-align: center;
-    max-width: 20rem;
+    @include btn;
     background-color: $fadedjade;
     border: 3px solid $fadedjade;
     padding: $space-10 $space-20;
     margin: $space-20 0;
     color: $white;
-    text-transform: uppercase;
-    font-size: $fs-14;
-    font-weight: 700;
 }
 
 .btn:hover {
@@ -22,16 +17,11 @@
 }
 
 .btnInverse {
-    display: inline-block;
-    text-align: center;
-    max-width: 20rem;
+    @include btn;
     background-color: $white;
     border: 3px solid $fadedjade;
     padding: $space-10 $space-10;
     color: $fadedjade;
-    text-transform: uppercase;
-    font-size: $fs-14;
-    font-weight: 700;
 }
 
 .btnInverse:hover {

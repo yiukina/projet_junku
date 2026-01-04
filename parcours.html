@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUNKU - Parcours thématiques</title>
+    <link rel="icon" href="/assets/logo/junku_favicon.svg">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="src/js/script.js"></script>
+</head>
+
+
+<body>
+
+    <header class="header">
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="assets/logo/junku_logo_original.webp" alt="" class="junku__logoImg">
+            </a>
+        </div>
+
+        <div class="header__menu">
+            <div class="header__menuIcons">
+                <div class="recherche__form">
+                    <form action="" method="post">
+                        <div class="sticky_button">
+                            <input type="text" name="menuRecherche" placeholder="Recherche">
+                            <button type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                            </svg>
+                            </button>
+                        </div>
+                        
+                    </form>
+                </div>
+                <div class="menuIcons">
+                    <ul class="list-unstyled menuIcons__list">
+                        
+                        <li class="menuIcons__item"><a href=""><img src="assets/icons/account_icon.svg" alt=""></a></li>
+                        <li class="menuIcons__item"><a href=""><img src="assets/icons/path_iconv2.svg" alt=""></a></li>
+                        <li class="menuIcons__item"><a href=""><img src="assets/icons/favmenu_icon.svg" alt=""></a></li>
+                        <li class="menuIcons__item"><a href=""><img src="assets/icons/shopbagfilled_icon.svg" alt=""></a></li>
+                    </ul>
+                </div>
+
+                
+            </div>
+
+            <div class="mainMenu">
+                <nav class="mainMenu__nav">
+                    <ul class="list-unstyled mainMenu__list">
+                        <li class="mainMenu__item">Catalogue</li>
+                        <li class="mainMenu__item"><a href="parcours.html">Parcours Thématiques</a></li>
+                        <li class="mainMenu__item">Lifestyle</li>
+                        <li class="mainMenu__item"><a href="actualites.html">Actualités</a></li>
+                        <li class="mainMenu__item">Contact</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+  
+    </header>
+
+
+    <main>
+        <section class="section">
+            <article class="section__w">
+                <h1>Parcours thématique</h1>
+
+                <div class="section__theme">
+                    <div class="theme__filtre">
+                        <p>Thèmes : </p>
+                        <div class="theme__check">
+                            <input type="checkbox" name="histoire" >
+                            <label for="histoire">Histoire</label>
+                        </div>
+                        <div class="theme__check">
+                            <input type="checkbox" name="histoire" >
+                            <label for="histoire">Art de vivre</label>
+                        </div>
+                        <div class="theme__check">
+                            <input type="checkbox" name="histoire" >
+                            <label for="histoire">Apprentissage</label>
+                        </div>
+
+                    </div>
+
+                    <div class="theme__container">
+                        
+                        <div class="theme__card">
+                            <img class="theme__cardImg" src="assets/media/vue-laterale-homme-tenant-l-epee.jpg" alt="">
+                            <div class="theme__cardInfos">
+                                <p class="theme__cardTitle">L’histoire du Japon : l’époque d’edo</p>
+                                <p class="theme__cardLegende">La période Edo (1603 - 1868) marque une ère de paix, de stabilité politique et d’isolement sous le shogunat Tokugawa. Durant ces siècles, le Japon connaît un essor économique, culturel et urbain sans précédent, tout en préservant ses traditions face au monde extérieur.</p>
+
+                                <div class="theme__secondDiv">
+                                    <div class="theme__tagContainer">
+                                        <div class="theme__tag">
+                                            <span>Histoire</span>
+                                        </div>
+                                        <div class="theme__tag">
+                                            <span>Permanent</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="theme_savoirPlus">
+                                        <a href="">En savoir plus</a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+
+
+
+
+
+
+    <footer class="footer">
+        <section class="section__w">
+            <div class="footer__container newsletter">
+                <div class="footer__newsletter">
+                    <p class="footer__Title newsletter__title">Abonnez-vous à notre newsletter</p>
+                    <p class="newsletter__intro">Pour recevoir toutes nos actualités, évènements, et les dernières nouveautés</p>
+                </div>
+                
+                <div class="newsletter__form">
+                    <form method="post">
+                        <div class="sticky_button">
+                            <input type="email" name="emailNewsletter" placeholder="S'inscrire à la newsletter">
+                            <button type="submit">S'inscrire</button>
+                        </div>
+                        
+                    </form>
+                </div>
+                
+
+            </div>
+
+            <div class="footer__container">
+                <div class="footer__logo">
+                    <a href=""><img src="assets/logo/junku_logo_blanc.webp" class="footer__imgLogo" alt=""></a>
+                </div>
+                
+
+                <div class="footer__infos">
+                    <p class="footer__Title">Librairie Junku</p>
+
+                    <div class="infosJunku">
+                        <div class="footer__card">
+                            <img class="infosJunku__icon" src="assets/icons/google-maps_icon.svg" alt="">
+                            <p class="infosJunku__text">18 rue des Pyramides</p>
+                        </div>
+                        <div class="footer__card">
+                            <img class="infosJunku__icon" src="assets/icons/phone_icon.svg" alt="">
+                            <p class="infosJunku__text">01 42 60 89 12</p>
+                        </div>                    
+                        <div class="footer__card">
+                            <img class="infosJunku__icon" src="assets/icons/clock_icon.svg" alt="">
+                            <div>
+                                <p class="infosJunku__text">Du lundi au samedi</p>
+                                <p class="infosJunku__text">de 10h à 19h</p>
+                            </div>
+                            
+                        </div>
+                        <div class="footer__card">
+                            <img class="infosJunku__icon" src="assets/icons/at_icon.svg" alt="">
+                            <p class="infosJunku__text">contact@junku.fr</p>
+                        </div>                    
+                    </div>
+                    
+                </div>
+                <div class="footer__pratique">
+                    <div class="footer__card">
+                        <img src="assets/icons/credit-card_icon.svg" class="pratique__icon" alt="">
+                        <p class="footer__Title">Paiement sécurisé</p>
+                    </div>
+                    <div class="footer__card">
+                        <img src="assets/icons/delivery_icon.svg" class="pratique__icon" alt="">
+                        <p class="footer__Title">Livraison 24h/48h</p>
+                    </div>
+                    <div class="footer__card">
+                        <img src="assets/icons/phone_icon.svg" class="pratique__icon" alt="">
+                        <div>
+                            <p class="footer__Title">Service client</p>
+                            <p class="pratique__Text">Du lundi au vendredi de 10h à 17h par téléphone au 01 42 60 89 12 ou par mail à contact@junku.fr</p>
+                        </div>
+                        
+                    </div>                        
+                </div>
+                <div class="footer__social">
+                    <p class="footer__Title">Suivez- nous</p>
+                    <div class="social">
+                        <img src="assets/icons/Facebook.svg" class="social__logo" alt="">
+                        <img src="assets/icons/Instagram.svg" class="social__logo" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class=" footer__container">
+                <p class="footer__copyright">Junku.fr © 2025</p>
+                <ul class="list-unstyled footer__mentionsList">
+                    <li class="footer__mentionsItem">Mentions légales</li>
+                    <li class="footer__mentionsItem">Conditions générales de vente</li>
+                    <li class="footer__mentionsItem">Protection des données</li>
+                </ul>
+            </div>
+
+        </section>
+    </footer>
+    
+</body>
+</html>

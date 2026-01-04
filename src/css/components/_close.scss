@@ -1,0 +1,9 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+@use '../utils/fonts';
+
+.square-close {
+    color: $darkblue;
+    width: $space-25;
+    height: $space-25;
+}

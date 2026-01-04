@@ -24,6 +24,61 @@
 .star {
   @include star();
 }
+.reviews__write {
+  @include flex_row;
+  justify-content: center;
+}
+
+#popupReviews {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#popupReviews:not(:target) {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.popupReviews__window {
+  position: relative;
+  width: 60rem;
+  background-color: $white;
+  padding: $space-40 $space-40;
+}
+
+.popupReviews__x {
+  position: absolute;
+  top: $space-10;
+  right: $space-10;
+}
+
+.reviews__comment {
+  @include flex_column;
+  padding: $space-15;
+  
+  > textarea {
+    @include box_shadow;
+    border: none;
+    margin: $space-20 0;
+    resize:vertical;
+  }
+
+  > input[type=submit] {
+    @include btn;
+    align-self: center;
+    padding: $space-10 $space-20;
+    background-color: $fadedjade;
+    color: $white;
+  }
+
+}
 
 .reviews__gallery {
     width: 76rem;

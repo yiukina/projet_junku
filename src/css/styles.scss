@@ -22,20 +22,33 @@
 
 /* -------- COMPONENTS ---------*/
 
-@use 'components/menu';
-@use 'components/rechercheHeader';
-@use 'components/newsletter';
-@use 'components/hero';
-@use 'components/btn';
-@use 'components/btnPanier';
-@use 'components/card_nouveaute';
-@use 'components/btnFavorite';
 @use 'components/accueilParcours';
 @use 'components/accueilCarousel';
-@use 'components/coupdecoeur';
-@use 'components/actualite';
-@use 'components/produit';
-@use 'components/thumbnailSlider';
-@use 'components/btnQty';
-@use 'components/likeToo';
 @use 'components/avisProduit';
+@use 'components/actualite';
+
+@use 'components/btn';
+@use 'components/btnPanier';
+@use 'components/btnFavorite';
+@use 'components/btnQty';
+
+@use 'components/card_nouveaute';
+@use 'components/coupdecoeur';
+@use 'components/close';
+
+@use 'components/hero';
+
+@use 'components/likeToo';
+
+@use 'components/menu';
+
+@use 'components/newsletter';
+
+@use 'components/parcoursTheme';
+@use 'components/produit';
+
+@use 'components/rechercheHeader';
+
+@use 'components/thumbnailSlider';
+
+

@@ -1,0 +1,91 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+@use '../utils/fonts';
+
+.section__theme {
+    @include flex_row;
+    justify-content: space-between;
+    margin-top: $space-30;
+}
+
+
+.theme__filtre {
+    @include flex_column;
+    max-width: 28rem;
+
+    > p {
+        font-size: $fs-16;
+        font-weight: 600;
+    }
+}
+
+.theme__check {
+    display: inline-flex;
+    margin-top: $space-10;
+
+    > input[type=checkbox] {
+        width: $space-20;
+        height: $space-20;
+        margin-right: $space-10;
+    }
+
+    > label {
+        font-size: $fs-14;
+    }
+
+}
+
+.theme__container {
+    width: 88rem;
+}
+
+.theme__card {
+    @include flex_row;
+    gap: $space-30;
+    border-bottom: 1px solid $fadedjade;
+    padding: $space-15;
+}
+
+.theme__cardImg {
+        width: 35rem;
+        height: 18rem;
+        object-fit:cover;
+}
+
+.theme__cardInfos {
+    @include flex_column;
+    gap: $space-10;
+}
+
+.theme__cardTitle {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: $fs-24;
+}
+.theme__secondDiv {
+    @include flex_row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.theme__tagContainer {
+    @include flex_row;
+    gap: 1.5rem;
+}
+
+.theme__tag {
+    margin: 2.5rem 0 ;
+
+    > span {
+        padding: 0.5rem $space-20;
+        background-color: $backgroundNav;
+        font-size: $fs-12;
+    }
+}
+
+.theme_savoirPlus {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: $fs-14;
+}

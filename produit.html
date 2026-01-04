@@ -53,7 +53,7 @@
                 <nav class="mainMenu__nav">
                     <ul class="list-unstyled mainMenu__list">
                         <li class="mainMenu__item">Catalogue</li>
-                        <li class="mainMenu__item">Parcours Thématiques</li>
+                        <li class="mainMenu__item"><a href="parcours.html">Parcours Thématiques</a></li>
                         <li class="mainMenu__item">Lifestyle</li>
                         <li class="mainMenu__item"><a href="actualites.html">Actualités</a></li>
                         <li class="mainMenu__item">Contact</li>
@@ -234,7 +234,7 @@
 
         <section class="section">
             <article class="section__w reviews">
-                <p class="reviews__bigTitle">Avis client</p>
+                <p class="reviews__bigTitle" id="reviews__bigTitle">Avis client</p>
                 <!-- https://codepen.io/antoniasymeonidou/pen/WNGdvvQ -->
                 <div class="reviews__survey">
                     <div class="reviews__global">
@@ -284,9 +284,23 @@
                         </div>
 
                         <div class="reviews__container reviews__write">
-                            
-
+                            <a class="btn" href="#popupReviews">Écrire un commentaire</a>
                         </div>
+
+                        <dialog id="popupReviews">
+                            <div class="popupReviews__window">
+                                <a class="popupReviews__x" href="#reviews__bigTitle"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="square-close" viewBox="0 0 16 16">
+                                <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708"/>
+                                </svg></a>
+                                <form class="reviews__comment" action="" method="post">
+                                    <p>Votre commentaire :</p>
+                                    <textarea name="" id="" rows="10" cols="40"></textarea>
+                                    <input type="submit" value="Envoyer">
+                                </form>
+                            </div>
+                        </dialog>
+
+                        
 
                     </div>
 
