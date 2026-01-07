@@ -1525,4 +1525,66 @@ progress::-ms-fill {
   height: 3.5rem;
   width: 3.5rem;
   padding: 0 1rem;
+}
+
+.product__slider {
+  width: 480px;
+  display: flex;
+  gap: 10px;
+}
+
+.swiper {
+  width: 380px;
+  height: 480px;
+}
+
+.swiper-slide {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumbs-wrapper {
+  width: 120px;
+}
+
+.thumbs-swiper {
+  width: 100px;
+  height: 500px;
+}
+
+.thumbs-swiper .thumbs-prev {
+  top: 10px;
+}
+
+.thumbs-swiper .thumbs-next {
+  bottom: 10px;
+}
+
+.thumbs-swiper img {
+  height: 100px;
+  width: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main-swiper img {
+  width: 380px;
+  height: 480px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.main-swiper {
+  width: 100%;
+  position: relative;
+}
+
+.thumbs-nav {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }/*# sourceMappingURL=styles.css.map */

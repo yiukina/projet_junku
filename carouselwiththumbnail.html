@@ -7,86 +7,106 @@
     <link rel="stylesheet" href="src/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="src/js/script.js"></script>
 </head>
 <body>
-    <section class="productCarousel">
-    <div class="productCarousel__container">
-        <div class="carousel">
-            <input type="radio" name="slides" checked="checked" id="slide-1">
-            <input type="radio" name="slides" id="slide-2">
-            <input type="radio" name="slides" id="slide-3">
-            <input type="radio" name="slides" id="slide-4">
-            <input type="radio" name="slides" id="slide-5">
-            <input type="radio" name="slides" id="slide-6">
-            <ul class="carousel__slides">
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src="https://picsum.photos/id/1041/800/450" alt="">
-                        </div>
-                    </figure>
-                </li>
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src="https://picsum.photos/id/1043/800/450" alt="">
-                        </div>
-                    </figure>
-                </li>
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src="https://picsum.photos/id/1044/800/450" alt="">
-                        </div>
-                    </figure>
-                </li>
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src="https://picsum.photos/id/1045/800/450" alt="">
-                        </div>
-                    </figure>
-                </li>
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src="https://picsum.photos/id/1049/800/450" alt="">
-                        </div>
-                    </figure>
-                </li>
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src="https://picsum.photos/id/1052/800/450" alt="">
-                        </div>
-                    </figure>
-                </li>
-            </ul>    
-            <ul class="carousel__thumbnails">
-                <li>
-                    <label for="slide-1"><img src="https://picsum.photos/id/1041/150/150" alt=""></label>
-                </li>
-                <li>
-                    <label for="slide-2"><img src="https://picsum.photos/id/1043/150/150" alt=""></label>
-                </li>
-                <li>
-                    <label for="slide-3"><img src="https://picsum.photos/id/1044/150/150" alt=""></label>
-                </li>
-                <li>
-                    <label for="slide-4"><img src="https://picsum.photos/id/1045/150/150" alt=""></label>
-                </li>
-                <li>
-                    <label for="slide-5"><img src="https://picsum.photos/id/1049/150/150" alt=""></label>
-                </li>
-                <li>
-                    <label for="slide-6"><img src="https://picsum.photos/id/1052/150/150" alt=""></label>
-                </li>
-            </ul>
-        </div>
+<!-- <div class="gallery-container">-->
+
+  <!-- Thumbnails -->
+  <!-- <div class="swiper thumbs-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="https://picsum.photos/id/101/200/200"></div>
+      <div class="swiper-slide"><img src="https://picsum.photos/id/102/200/200"></div>
+      <div class="swiper-slide"><img src="https://picsum.photos/id/103/200/200"></div>
+      <div class="swiper-slide"><img src="https://picsum.photos/id/104/200/200"></div>
     </div>
-</section>
+  </div> -->
+
+  <!-- Main slider -->
+  <!-- <div class="swiper main-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="https://picsum.photos/id/101/800/600"></div>
+      <div class="swiper-slide"><img src="https://picsum.photos/id/102/800/600"></div>
+      <div class="swiper-slide"><img src="https://picsum.photos/id/103/800/600"></div>
+      <div class="swiper-slide"><img src="https://picsum.photos/id/104/800/600"></div>
+    </div> -->
+
+    <!-- Navigation -->
+   <!-- <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+</div> -->
+
+<div class="product-gallery">
+
+  <!-- Thumbnails -->
+  <div class="thumbs-wrapper">
+    <div class="swiper thumbs-swiper">
+
+            <!-- Navigation thumbnails -->
+            <div class="thumbs-nav thumbs-prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M7.776 5.553a.5.5 0 0 1 .448 0l6 3a.5.5 0 1 1-.448.894L8 6.56 2.224 9.447a.5.5 0 1 1-.448-.894z"/>
+                </svg>
+            </div>
+
+            <div class="swiper-wrapper">
+                <!-- 10 thumbnails -->
+                <div class="swiper-slide"><img src="https://picsum.photos/id/101/150/150"></div>
+                <div class="swiper-slide"><img src="https://picsum.photos/id/102/150/150"></div>
+                <div class="swiper-slide"><img src="https://picsum.photos/id/103/150/150"></div>
+                <div class="swiper-slide"><img src="https://picsum.photos/id/104/150/150"></div>
+                <div class="swiper-slide"><img src="https://picsum.photos/id/105/150/150"></div>
+                <div class="swiper-slide"><img src="https://picsum.photos/id/106/150/150"></div>
+                <div class="swiper-slide"><img src="https://picsum.photos/id/107/150/150"></div>
+                <div class="swiper-slide"><img src="https://picsum.photos/id/108/150/150"></div>
+                <div class="swiper-slide"><img src="https://picsum.photos/id/109/150/150"></div>
+                <div class="swiper-slide"><img src="https://picsum.photos/id/110/150/150"></div>
+            </div>
+            
+            <div class="thumbs-nav thumbs-next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67"/>
+                </svg>
+            </div>
+
+        </div>
+
+
+        
+  </div>
+
+  <!-- Main slider -->
+<div class="swiper main-swiper">
+  <div class="swiper-wrapper">
+    <!-- slides -->
+    <div class="swiper-slide"><img src="https://picsum.photos/id/101/800/800"></div>
+    <div class="swiper-slide"><img src="https://picsum.photos/id/102/800/800"></div>
+    <div class="swiper-slide"><img src="https://picsum.photos/id/103/800/800"></div>
+    <div class="swiper-slide"><img src="https://picsum.photos/id/104/800/800"></div>
+    <div class="swiper-slide"><img src="https://picsum.photos/id/105/800/800"></div>
+    <div class="swiper-slide"><img src="https://picsum.photos/id/106/800/800"></div>
+    <div class="swiper-slide"><img src="https://picsum.photos/id/107/800/800"></div>
+    <div class="swiper-slide"><img src="https://picsum.photos/id/108/800/800"></div>
+    <div class="swiper-slide"><img src="https://picsum.photos/id/109/800/800"></div>
+    <div class="swiper-slide"><img src="https://picsum.photos/id/110/800/800"></div>
+  </div>
+
+  <!-- Navigation principale -->
+  <div class="swiper-button-prev main-prev"></div>
+  <div class="swiper-button-next main-next"></div>
+</div>
+
+</div>
+
 
     
 </body>
 </html>
+
+
+En HTML css et js, ainsi qu'avec l'aide de la bibliothèque Swiper pour les carrousels, je souhaiterais que tu me créer un carrousel composé de 10 images par exemple en version loop. Je veux qu'il y ai un vertical thumbnails comme sur des pages produit de e-commerce affichant seulement 4 thumbnails qui aurait sa propre navigation haut et bas.

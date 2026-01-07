@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-/* ------------------------- carroussel ------------------------- */ 
+/* ------------------------- carroussel accueil ------------------------- */ 
 
 
 $(document).ready(function () {
@@ -124,4 +124,29 @@ $(document).ready(function () {
 
     window.addEventListener("load", resizeAllGridItems);
     window.addEventListener("resize", resizeAllGridItems);
+});
+
+
+/* ---------------------- carrousel produit --------------------------- */
+
+
+$(document).ready(function () {
+  const thumbsSwiper = new Swiper(".thumbs-swiper", {
+    direction: "vertical",
+    slidesPerView: 4.5,
+    spaceBetween: 1,
+    navigation: {
+      nextEl: ".thumbs-next",
+      prevEl: ".thumbs-prev",
+    },
+    watchSlidesProgress: true,
+  });
+
+  const mainSwiper = new Swiper(".main-swiper", {
+    loop: true,
+    spaceBetween: 10,
+    thumbs: {
+      swiper: thumbsSwiper,
+    },
+  });
 });
