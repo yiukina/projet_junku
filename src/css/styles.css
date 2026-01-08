@@ -277,7 +277,7 @@ input {
   }
 }
 .accueilCaroussel {
-  max-width: 580px;
+  max-width: 58rem;
   width: 100%;
   margin: 5rem 0;
   opacity: 0;
@@ -306,14 +306,14 @@ input {
 }
 
 .stage {
-  max-width: 580px;
+  max-width: 58rem;
   width: 100%;
-  height: 400px;
+  height: 40rem;
   transition: all 0.25s ease-in-out;
 }
 
 .slide {
-  width: 380px;
+  width: 38rem;
   transform-origin: 50% 50%;
   height: inherit;
   display: inline-block;
@@ -323,8 +323,8 @@ input {
 }
 
 .slide.active, .slide.active .slide_img {
-  width: 380px;
-  height: 300px;
+  width: 38rem;
+  height: 30rem;
   transition: all 0.25s ease-in-out;
 }
 
@@ -333,7 +333,7 @@ input {
 }
 
 .slide.inactive, .slide.inactive .slide_img {
-  width: 90px;
+  width: 9rem;
   transition: all 0.25s ease-in-out;
   opacity: 0.5;
 }
@@ -343,8 +343,8 @@ input {
 }
 
 .slide_img {
-  width: 380px;
-  height: 300px;
+  width: 38rem;
+  height: 30rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -359,20 +359,20 @@ input {
 
 @media all and (min-width: 768px) {
   .accueilCaroussel {
-    width: 550px;
+    width: 55rem;
   }
   .slide {
-    width: 350px;
+    width: 35rem;
   }
   .slide.inactive {
-    width: 90px;
+    width: 9rem;
   }
   .slide.active, .slide.active .slide_img {
-    width: 350px;
+    width: 35rem;
   }
   .stage {
-    max-width: 550px;
-    height: 300px;
+    max-width: 55rem;
+    height: 30rem;
   }
 }
 @media all and (max-width: 768px) {
@@ -763,6 +763,18 @@ progress::-ms-fill {
 
 .btnInverse:hover {
   background-color: #3F6D7A;
+  color: #ffffff;
+}
+
+.btnRed {
+  display: inline-block;
+  text-align: center;
+  max-width: 20rem;
+  font-size: 1.6rem;
+  background-color: #E45454;
+  border: 3px solid #E45454;
+  padding: 1rem 2rem;
+  margin: 2rem 0;
   color: #ffffff;
 }
 
@@ -1405,13 +1417,124 @@ progress::-ms-fill {
   font-weight: 600;
 }
 
+.parcours__tagContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+
 .parcours__tag {
   margin: 2.5rem 0;
 }
 .parcours__tag > span {
-  padding: 0.5rem 2rem;
-  background-color: #F8F5EE;
+  padding: 0.5rem 4rem;
+  background-color: #FFEDD9;
   font-size: 1.2rem;
+}
+
+.parcours__relative {
+  position: relative;
+}
+
+.parcours__absolu {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.parcours__infos {
+  background-color: #1A2459;
+  color: #ffffff;
+  padding: 2.5rem;
+  padding-bottom: 5rem;
+  width: 55rem;
+  min-height: 18rem;
+  position: relative;
+}
+
+.parcours__suivre {
+  position: absolute;
+  bottom: -4rem;
+  right: -4rem;
+}
+
+.edo-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.edo-container h1 {
+  color: #1d2b6c;
+  margin-bottom: 20px;
+}
+
+.edo-card {
+  display: flex;
+  border: 3px solid #1e90ff;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Image */
+.edo-image img {
+  width: 500px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Contenu */
+.edo-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+/* Stats */
+.edo-stats {
+  background: #fdebd7;
+  padding: 15px;
+  width: 180px;
+  align-self: flex-end;
+  text-align: center;
+}
+
+.edo-stats strong {
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Texte */
+.edo-text {
+  background: #1d2b6c;
+  color: white;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+/* Boutons */
+.edo-actions {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.btn-light {
+  background: #fdebd7;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #f05a5a;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  cursor: pointer;
+  margin-left: auto;
 }
 
 .product {
@@ -1528,14 +1651,14 @@ progress::-ms-fill {
 }
 
 .product__slider {
-  width: 480px;
+  width: 48rem;
   display: flex;
-  gap: 10px;
+  gap: 1rem;
 }
 
 .swiper {
-  width: 380px;
-  height: 480px;
+  width: 38rem;
+  height: 48rem;
 }
 
 .swiper-slide {
@@ -1545,32 +1668,24 @@ progress::-ms-fill {
 }
 
 .thumbs-wrapper {
-  width: 120px;
+  width: 12rem;
 }
 
 .thumbs-swiper {
-  width: 100px;
-  height: 500px;
-}
-
-.thumbs-swiper .thumbs-prev {
-  top: 10px;
-}
-
-.thumbs-swiper .thumbs-next {
-  bottom: 10px;
+  width: 10rem;
+  height: 50rem;
 }
 
 .thumbs-swiper img {
-  height: 100px;
-  width: 80px;
+  height: 10rem;
+  width: 8rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .main-swiper img {
-  width: 380px;
-  height: 480px;
+  width: 38rem;
+  height: 48rem;
   -o-object-fit: contain;
      object-fit: contain;
 }

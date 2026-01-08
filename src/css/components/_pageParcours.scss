@@ -38,15 +38,132 @@
         }
     }
 }
-
-
+.parcours__tagContainer {
+    @include flex_row;
+    gap: $space-50;
+}
 
 .parcours__tag {
     margin: 2.5rem 0 ;
 
     > span {
-        padding: 0.5rem $space-20;
-        background-color: $backgroundNav;
+        padding: 0.5rem $space-40;
+        background-color: $beige;
         font-size: $fs-12;
     }
+}
+.parcours__relative {
+    position: relative;
+}
+
+.parcours__absolu {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.parcours__infos {
+    background-color: $darkblue;
+    color: $white;
+    padding: $space-25;
+    padding-bottom: $space-50;
+    width: 55rem;
+    min-height: 18rem;
+    position: relative;
+}
+
+.parcours__suivre {
+    position: absolute;
+    bottom: -$space-40;
+    right: -$space-40;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.edo-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.edo-container h1 {
+    color: #1d2b6c;
+    margin-bottom: 20px;
+}
+
+.edo-card {
+    display: flex;
+    border: 3px solid #1e90ff;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Image */
+.edo-image img {
+    width: 500px;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Contenu */
+.edo-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+/* Stats */
+.edo-stats {
+    background: #fdebd7;
+    padding: 15px;
+    width: 180px;
+    align-self: flex-end;
+    text-align: center;
+}
+
+.edo-stats strong {
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Texte */
+.edo-text {
+    background: #1d2b6c;
+    color: white;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Boutons */
+.edo-actions {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.btn-light {
+    background: #fdebd7;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #f05a5a;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    margin-left: auto;
 }

@@ -1,12 +1,17 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+@use '../utils/fonts';
+
+
 .product__slider {
-    width: 480px;
+    width: 48rem;
     display: flex;
-    gap: 10px;
+    gap: $space-10;
 }
 
 .swiper {
-  width: 380px;
-  height: 480px;
+  width: 38rem;
+  height: 48rem;
 }
 
 .swiper-slide {
@@ -16,31 +21,31 @@
 }
 
 .thumbs-wrapper {
-  width: 120px;
+  width: 12rem;
 }
 
 .thumbs-swiper {
-    width: 100px;
-    height: 500px;
+    width: 10rem;
+    height: 50rem;
 }
 
-.thumbs-swiper .thumbs-prev {
-    top:10px;
-}
+// .thumbs-swiper .thumbs-prev {
+//     top:$space-10;
+// }
 
-.thumbs-swiper .thumbs-next {
-    bottom:10px;
-}
+// .thumbs-swiper .thumbs-next {
+//     bottom:$space-10;
+// }
 
 .thumbs-swiper img {
-    height: 100px ;
-    width: 80px ;
+    height: 10rem ;
+    width: 8rem ;
     object-fit: cover;
 }
 
 .main-swiper img {
-    width: 380px;
-    height: 480px;
+    width: 38rem;
+    height: 48rem;
     object-fit: contain;
 }
 
